@@ -1,0 +1,15 @@
+<div class="input-group mb-3">
+  <input type="text" 
+  class="form-control" 
+  #InputTermino 
+  placeholder="NOMBRE DEL POKEMOM" 
+  aria-label="NOMBRE DEL POKEMOM" 
+  aria-describedby="button-addon2"
+  (keydown.enter)="setTermino(InputTermino.value)">
+  <button 
+  class="btn btn-dark" 
+  type="button" 
+  id="button-addon2"
+  (click)="setTermino(InputTermino.value)"
+  ><i class="bi bi-search"></i></button>
+</div>

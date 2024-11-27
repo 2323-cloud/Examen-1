@@ -1,0 +1,58 @@
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px; /* Relleno */
+    background-color: #f8f9fa; /* Fondo claro */
+    border-bottom: 2px solid #007bff; /* Borde inferior azul */
+}
+
+/* Título del modal */
+.modal-title {
+    font-size: 1.8rem; /* Tamaño de fuente más grande */
+    color: #0056b3; /* Azul más oscuro */
+}
+
+/* Modal Body */
+.modal-body {
+    text-align: center; /* Centrar el texto */
+    background-color: #f1f1f1; /* Fondo gris claro */
+    padding: 20px; /* Relleno */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Imagen del Pokémon */
+.modal-body img {
+    max-width: 100%; /* Asegura que la imagen no se desborde */
+    height: auto; /* Mantener la proporción de la imagen */
+    border-radius: 10px; /* Bordes redondeados */
+    margin-bottom: 20px; /* Espaciado inferior */
+    border: 2px solid #007bff; /* Borde azul alrededor de la imagen */
+}
+
+/* Estilo de los datos del Pokémon */
+.modal-body p {
+    font-size: 1.2rem; /* Tamaño de fuente más grande */
+    color: #333; /* Color más oscuro */
+    margin: 5px 0; /* Espaciado entre párrafos */
+}
+
+/* Habilidades, Tipos y Estadísticas */
+.modal-body h4 {
+    font-weight: bold; /* Negrita */
+    color: #ff5722; /* Color naranja */
+    margin-top: 20px; /* Espaciado superior */
+}
+
+/* Listas no ordenadas */
+.list-unstyled {
+    padding-left: 0; /* Sin padding */
+    list-style-type: none; /* Sin puntos */
+}
+
+/* Asegurarse de que cada columna sea flexible */
+.col-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar elementos en la columna */
+}

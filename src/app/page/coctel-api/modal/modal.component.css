@@ -1,0 +1,127 @@
+.imagenprincipal {
+  width: 350px;
+  height: auto;
+}
+
+/* Imagen principal del cóctel en el modal */
+.img-modal {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15); /* Sombra más suave */
+    margin-bottom: 20px;
+    transition: transform 0.4s ease; /* Animación suave */
+    
+}
+
+.img-modal:hover {
+    transform: scale(1.1); /* Zoom al pasar el ratón */
+    
+}
+
+/* Estilo de la cabecera del modal */
+.modal-header {
+    background-color: #ff5722; /* Color de fondo naranja más oscuro */
+    color: white; /* Texto en blanco */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 15px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+}
+
+.modal-header .btn-close {
+    color: white; /* Color del botón de cerrar */
+    
+}
+
+/* Título del cóctel */
+.modal-title {
+    font-size: 2.2rem;
+    font-weight: bold; /* Negrita */
+    margin: 0;
+    letter-spacing: 1.5px;
+    text-transform: uppercase; /* Texto en mayúsculas */
+    background-color: #0e0d0d;
+}
+
+/* Estilo del cuerpo del modal */
+.modal-body {
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: #0f0f0f; /* Color más oscuro para mejor contraste */
+    line-height: 1.6; /* Espaciado más compacto */
+}
+
+/* Secciones de información del cóctel */
+.modal-body p {
+    font-size: 1.1rem; /* Tamaño de fuente ajustado */
+    margin-bottom: 15px;
+    
+}
+
+.modal-body span {
+    font-weight: bold; /* Negrita */
+    font-size: 1.3rem;
+    display: block;
+    margin-top: 15px;
+    color: #ff5722; /* Color naranja más oscuro */
+     background-color: #d76d3f;
+}
+
+/* Lista de ingredientes */
+.list-unstyled {
+    margin: 0;
+    padding-left: 0; /* Sin padding */
+}
+
+.list-unstyled li {
+    font-size: 1.1rem;
+    padding: 6px 0;
+    color: #666; /* Color de texto más claro */
+}
+
+/* Footer del modal */
+.modal-footer {
+    background-color: #f9f9f9; /* Color de fondo gris claro */
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.modal-footer .btn-secondary {
+    background-color: #4caf50; /* Color verde */
+    border-color: #ec5d1a; /* Mismo color para borde */
+    color: white; /* Texto blanco */
+    padding: 10px 25px;
+    border-radius: 25px; /* Botones redondeados */
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+.modal-footer .btn-secondary:hover {
+    background-color: #45a049; /* Color más oscuro al pasar el ratón */
+}
+
+/* General */
+.modal-content {
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2); /* Sombra más suave */
+    background-color: #fceff2;
+}
+
+/* Ajustes en pantallas pequeñas */
+@media (max-width: 768px) {
+    .modal-title {
+        font-size: 1.8rem; /* Tamaño de fuente reducido */
+        
+    }
+    
+    .img-modal {
+        margin-bottom: 15px; /* Espaciado inferior ajustado */
+    }
+    
+    .modal-body p {
+        font-size: 1rem; /* Tamaño de fuente más pequeño */
+    }
+}

@@ -1,0 +1,51 @@
+<div class="modal fade" #modalElement tabindex="-1" aria-labelledby="platoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content shadow-lg border-0 rounded">
+
+            <!-- Header with a stylish close button -->
+            <div class="modal-header p-4" style="background-color: #4CAF50; color: white;">
+                <h4 class="modal-title" id="platoModalLabel">Agregar Plato</h4>
+                <button type="button" class="btn-close btn-outline-light" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+            </div>
+
+            <!-- Body with form inputs inside card-like layout -->
+            <div class="modal-body p-4">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="name" class="form-label">Nombre del Plato</label>
+                            <input type="text" id="name" class="form-control" #name>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label for="category" class="form-label">Categoría</label>
+                            <input type="text" id="category" class="form-control" #category>
+                        </div>
+
+                        <div class="col-md-12 mb-3">
+                            <label for="description" class="form-label">Descripción</label>
+                            <textarea id="description" class="form-control" #description rows="3"></textarea>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label for="price" class="form-label">Precio</label>
+                            <input type="number" id="price" class="form-control" #price>
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer with action buttons -->
+            <div class="modal-footer d-flex justify-content-between align-items-center p-3">
+                <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-success"
+                    (click)="Agregar(name.value, category.value, description.value, price.value)">
+                    Agregar Plato
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

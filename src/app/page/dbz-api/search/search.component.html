@@ -1,0 +1,7 @@
+<div class="input-group mb-3">
+    <input type="text" #terminoIngresado class="form-control" placeholder="NOMBRE DE DRAGON Z"
+        aria-label="NOMBRE DE DRAGON Z" aria-describedby="button-addon2"
+        (keydown.enter)="getTermin(terminoIngresado.value)">
+    <button class="btn btn-dark" (click)="getTermin(terminoIngresado.value)" type="button"
+        id="button-addon2"><i class="bi bi-search"></i></button>
+</div>

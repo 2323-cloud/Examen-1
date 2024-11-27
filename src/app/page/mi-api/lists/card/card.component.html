@@ -1,0 +1,30 @@
+<table class="table table-striped custom-table mt-4">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Descripcion</th>
+            <th scope="col">Precio</th>
+            <th scope="col">Categoria</th>
+            <th scope="col">Fecha de Agregación</th>
+            <th scope="col">Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let pla of platosC?.platos">
+            <td>{{pla._id}}</td>
+            <td>{{pla.name}}</td>
+            <td>{{pla.description}}</td>
+            <td>{{pla.price}}</td>
+            <td>{{pla.category}}</td>
+            <td>{{ pla.createdAt | date: 'yyyy-MM-dd' }}</td>
+            <td>
+                <button class="btn btn-success w-100" (click)="openModal(pla)">Put</button>
+                <button (click)="eliminar(pla._id!)" class="btn btn-outline-danger w-100 mt-2">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+
+<app-modal-editar></app-modal-editar>

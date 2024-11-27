@@ -1,0 +1,33 @@
+<div class="modal fade" #modalElement tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1>Editar Plato</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+                <label for="name" class="form-label">Nombre</label>
+                <input type="text" id="name" class="form-control" [(ngModel)]="plato.name" #name>
+
+                <label for="category" class="form-label">Categoría</label>
+                <input type="text" id="category" class="form-control" [(ngModel)]="plato.category" #category>
+
+                <label for="description" class="form-label">Descripción</label>
+                <textarea id="description" class="form-control" [(ngModel)]="plato.description" #description
+                    rows="3"></textarea>
+
+                <label for="price" class="form-label">Precio</label>
+                <input type="text" id="price" class="form-control" [(ngModel)]="plato.price" #price>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary"
+                    (click)="editPlato(name.value, category.value, description.value, price.value)">
+                    Guardar Cambios
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

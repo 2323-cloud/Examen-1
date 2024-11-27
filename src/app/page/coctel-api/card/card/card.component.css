@@ -1,0 +1,39 @@
+.drink-card {
+  transition: transform 0.3s, background-color 0.3s, border-color 0.3s; /* Transición suave */
+  background-color: #f8def0; /* Color de fondo más suave */
+  border: 2px solid #0f0f0f; /* Borde en verde más oscuro */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.drink-card:hover {
+  transform: translateY(-5px); /* Sube ligeramente la tarjeta al pasar el mouse */
+  background-color: #fffde7; /* Color de fondo más claro al pasar el mouse */
+  border-color: #93fabe; /* Cambia el color del borde al pasar el mouse */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Sombra más intensa al pasar el mouse */
+}
+
+.drink-image {
+  width: 200px; /* Ancho de la imagen */
+  height: 200px; /* Alto de la imagen */
+  border-radius: 50%; /* Hacer la imagen circular */
+  object-fit: cover; /* Cubrir el área de la imagen */
+  margin: 20px auto; /* Centrar la imagen */
+  transition: transform 0.3s, border-color 0.3s; /* Transición suave */
+  border: 3px solid #161616; /* Borde por defecto */
+}
+
+.drink-image:hover {
+  transform: scale(1.1); /* Aumenta ligeramente el tamaño de la imagen al pasar el mouse */
+  border-color: #ff4081; /* Cambia el color del borde al pasar el mouse */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Sombra al pasar el mouse */
+}
+
+/* Ajustes en pantallas pequeñas */
+@media (max-width: 768px) {
+  .drink-image {
+    width: 150px; /* Ajustar el ancho en pantallas pequeñas */
+    height: 150px; /* Ajustar el alto en pantallas pequeñas */
+    
+  }
+}
